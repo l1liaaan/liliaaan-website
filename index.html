@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============ SEO ============ -->
+  <!-- Brand: Liliaaan Studio. Jika domain berubah, ganti liliaaan.pages.dev di seluruh file -->
+  <title>Liliaaan Studio — Data, Systems &amp; Digital Solutions</title>
+  <meta name="description" content="Jasa sistem informasi, dashboard monitoring, data analytics, ETL, machine learning, dan data administration untuk UMKM, sekolah, instansi, organisasi, dan tim bisnis.">
+  <meta name="author" content="Liliaaan">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F6F6F4">
+  <link rel="canonical" href="https://liliaaan.pages.dev/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Liliaaan Studio">
+  <meta property="og:title" content="Liliaaan Studio — Data, Systems &amp; Digital Solutions">
+  <meta property="og:description" content="Dari data berantakan ke sistem yang bekerja. Sistem informasi, dashboard, ETL, dan machine learning.">
+  <meta property="og:url" content="https://liliaaan.pages.dev/">
+  <meta property="og:image" content="https://liliaaan.pages.dev/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Liliaaan Studio — Data, Systems &amp; Digital Solutions">
+  <meta name="twitter:description" content="Dari data berantakan ke sistem yang bekerja.">
+  <meta name="twitter:image" content="https://liliaaan.pages.dev/assets/images/og-image.png">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <!-- Fonts: Geist (UI & heading) + Geist Mono (khusus tampilan data/angka) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Terapkan tema sebelum render pertama agar tidak ada kedipan warna -->
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      d.setAttribute('data-theme', t);
+      d.classList.add('js');
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.setAttribute('content', t === 'dark' ? '#101216' : '#F6F6F4');
+      // Pengaman: jika script.js gagal dimuat, konten tetap tampil
+      setTimeout(function () { if (!window.__siteReady) d.classList.add('reveal-fallback'); }, 2500);
+    })();
+  </script>
+  <script src="script.js" defer></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Liliaaan Studio",
+    "slogan": "Data. Systems. Digital Solutions.",
+    "description": "Jasa sistem informasi, dashboard monitoring, data analytics, ETL, machine learning, dan data administration.",
+    "url": "https://liliaaan.pages.dev/",
+    "image": "https://liliaaan.pages.dev/assets/images/og-image.png",
+    "email": "nuraulia.putri150405@gmail.com",
+    "areaServed": "ID",
+    "founder": { "@type": "Person", "name": "Nur Aulia Putri", "alternateName": "Liliaaan" },
+    "telephone": "+6282339633564",
+    "sameAs": ["https://www.linkedin.com/in/nur-aulia-putri-5a90aa2b0/", "https://github.com/l1liaaan"],
+    "knowsAbout": ["Sistem Informasi", "Dashboard Monitoring", "Power BI", "ETL", "Data Analytics", "Machine Learning", "Data Administration"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+
+  <!-- ============ ICON SPRITE (gaya Lucide, stroke 24px) ============ -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"/></symbol>
+    <symbol id="i-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><circle cx="12" cy="12.5" r="2"/><path d="M12 7v3.5M10.5 13.8 6.4 17.6M13.5 13.8l4.1 3.8"/></symbol>
+    <symbol id="i-workflow" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v3a2 2 0 0 0 2 2H14"/><path d="M12 13l2 2-2 2"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-bars" viewBox="0 0 24 24"><path d="M6 20V11M12 20V5M18 20v-6M3 20h18"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-6.5M12 13.5a2.5 2.5 0 0 1 5 0V17"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.2 2.4 2.4 4.6-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.8-4M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.8 4M20 20v-4h-4"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+  </svg>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#home" aria-label="Liliaaan Studio, kembali ke atas">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" class="brand__mark-bg"/>
+          <rect x="8" y="9" width="8" height="3" rx="1.5" class="brand__mark-line"/>
+          <rect x="8" y="14.5" width="16" height="3" rx="1.5" class="brand__mark-accent"/>
+          <rect x="8" y="20" width="12" height="3" rx="1.5" class="brand__mark-line"/>
+        </svg>
+        <span class="brand__name">Liliaaan Studio</span>
+      </a>
+
+      <nav class="nav__menu" aria-label="Navigasi utama">
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#home" data-nav="home">Home</a></li>
+          <li><a class="nav__link" href="#services" data-nav="services">Services</a></li>
+          <li><a class="nav__link" href="#portfolio" data-nav="portfolio">Portfolio</a></li>
+          <li><a class="nav__link" href="#process" data-nav="process">Process</a></li>
+          <li><a class="nav__link" href="#about" data-nav="about">About</a></li>
+          <li><a class="nav__link" href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false">
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contact">
+          Let's Talk
+          <svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" inert>
+      <nav class="container" aria-label="Navigasi mobile">
+        <ul class="mobile-menu__links">
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#services" data-nav="services">Services</a></li>
+          <li><a href="#portfolio" data-nav="portfolio">Portfolio</a></li>
+          <li><a href="#process" data-nav="process">Process</a></li>
+          <li><a href="#about" data-nav="about">About</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary btn--block" href="#contact">
+          Let's Talk
+          <svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="hero__status enter" style="--i:0">
+            <span class="status-dot" aria-hidden="true"></span>
+            Tersedia untuk project baru
+          </p>
+          <h1 class="hero__title enter" id="hero-title" style="--i:1">Dari data berantakan ke sistem yang bekerja.</h1>
+          <p class="hero__lead enter" style="--i:2">
+            Saya membangun sistem informasi, dashboard monitoring, pipeline data, dan model machine learning,
+            supaya data yang tersebar bisa menjadi informasi yang jelas dan keputusan yang lebih tepat.
+          </p>
+          <div class="hero__actions enter" style="--i:3">
+            <a class="btn btn--primary btn--lg" href="#contact">
+              Start a Project
+              <svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#services">Explore Services</a>
+          </div>
+          <p class="hero__audience enter" style="--i:4">Untuk UMKM, sekolah, instansi, organisasi, dan tim bisnis.</p>
+        </div>
+
+        <!-- Visual utama: satu dataset melewati empat tahap -->
+        <div class="hero__visual enter" style="--i:2">
+          <div class="window" id="flow">
+            <div class="window__bar">
+              <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="window__title" id="flow-title">penjualan_final_v3 (2).xlsx</span>
+              <button class="window__pause" type="button" aria-label="Jeda animasi" aria-pressed="false">
+                <svg class="icon icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+                <svg class="icon icon--play" aria-hidden="true"><use href="#i-play"/></svg>
+              </button>
+            </div>
+
+            <div class="segmented" role="tablist" aria-label="Tahap pengolahan data">
+              <button role="tab" id="tab-raw" aria-controls="stage-raw" aria-selected="true" tabindex="0" type="button"><span class="segmented__n" aria-hidden="true">1</span>Mentah</button>
+              <button role="tab" id="tab-clean" aria-controls="stage-clean" aria-selected="false" tabindex="-1" type="button"><span class="segmented__n" aria-hidden="true">2</span>Terstruktur</button>
+              <button role="tab" id="tab-info" aria-controls="stage-info" aria-selected="false" tabindex="-1" type="button"><span class="segmented__n" aria-hidden="true">3</span>Informasi</button>
+              <button role="tab" id="tab-decide" aria-controls="stage-decide" aria-selected="false" tabindex="-1" type="button"><span class="segmented__n" aria-hidden="true">4</span>Keputusan</button>
+            </div>
+            <div class="window__progress" aria-hidden="true"><span></span></div>
+
+            <div class="window__body">
+              <!-- Tahap 1: data mentah -->
+              <div class="stage is-active" id="stage-raw" role="tabpanel" aria-labelledby="tab-raw" data-file="penjualan_final_v3 (2).xlsx">
+                <div class="table-scroll">
+                  <table class="sheet sheet--raw">
+                    <caption class="sr-only">Data penjualan mentah dengan format tanggal berbeda, duplikat, dan nilai kosong</caption>
+                    <thead><tr><th>tanggal</th><th>cabang</th><th>produk</th><th class="num">qty</th><th class="num">total</th></tr></thead>
+                    <tbody>
+                      <tr><td>12/03/24</td><td>utara&nbsp;</td><td>Kopi Susu</td><td class="num">24</td><td class="num">Rp 432.000</td></tr>
+                      <tr class="is-dup"><td class="is-bad">2024-03-12</td><td>Utara</td><td>kopi susu</td><td class="num is-empty"></td><td class="num">432000</td></tr>
+                      <tr><td class="is-bad">13 Mar</td><td>SELATAN</td><td>Teh Tarik</td><td class="num">18</td><td class="num is-bad">Rp270rb</td></tr>
+                      <tr class="is-dup"><td>13/03/2024</td><td>selatan</td><td>Teh tarik</td><td class="num">18</td><td class="num">270.000</td></tr>
+                      <tr><td class="is-empty"></td><td>Timur</td><td>Roti Bakar</td><td class="num is-bad">sembilan</td><td class="num">Rp 225.000</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="stage__notes">
+                  <li class="note note--warn">3 format tanggal</li>
+                  <li class="note note--warn">2 baris duplikat</li>
+                  <li class="note note--warn">2 nilai kosong</li>
+                </ul>
+              </div>
+
+              <!-- Tahap 2: data terstruktur -->
+              <div class="stage" id="stage-clean" role="tabpanel" aria-labelledby="tab-clean" data-file="tabel_sales (database)">
+                <div class="table-scroll">
+                  <table class="sheet sheet--clean">
+                    <caption class="sr-only">Data penjualan yang sudah dibersihkan dan diseragamkan</caption>
+                    <thead><tr><th>tanggal<small>date</small></th><th>cabang<small>text</small></th><th>produk<small>text</small></th><th class="num">qty<small>int</small></th><th class="num">total<small>idr</small></th></tr></thead>
+                    <tbody>
+                      <tr><td>2024-03-12</td><td>Utara</td><td>Kopi Susu</td><td class="num">24</td><td class="num">432.000</td></tr>
+                      <tr><td>2024-03-13</td><td>Selatan</td><td>Teh Tarik</td><td class="num">18</td><td class="num">270.000</td></tr>
+                      <tr><td>2024-03-13</td><td>Timur</td><td>Roti Bakar</td><td class="num">9</td><td class="num">225.000</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="stage__notes">
+                  <li class="note note--ok"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Format seragam</li>
+                  <li class="note note--ok"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Duplikat dihapus</li>
+                  <li class="note note--ok"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Tersimpan di database</li>
+                </ul>
+              </div>
+
+              <!-- Tahap 3: informasi -->
+              <div class="stage" id="stage-info" role="tabpanel" aria-labelledby="tab-info" data-file="Dashboard penjualan mingguan">
+                <div class="kpis">
+                  <div class="kpi">
+                    <span class="kpi__label">Penjualan minggu ini</span>
+                    <strong class="kpi__value" data-count="18.4" data-decimals="1" data-prefix="Rp " data-suffix=" jt">Rp 18,4 jt</strong>
+                    <span class="kpi__delta">+12% dari minggu lalu</span>
+                  </div>
+                  <div class="kpi">
+                    <span class="kpi__label">Transaksi</span>
+                    <strong class="kpi__value" data-count="1284">1.284</strong>
+                    <span class="kpi__delta">+86 transaksi</span>
+                  </div>
+                  <div class="kpi">
+                    <span class="kpi__label">Produk teratas</span>
+                    <strong class="kpi__value">Kopi Susu</strong>
+                    <span class="kpi__delta kpi__delta--muted">31% dari penjualan</span>
+                  </div>
+                </div>
+                <figure class="mini-chart">
+                  <svg viewBox="0 0 280 96" role="img" aria-label="Grafik penjualan harian, tertinggi pada hari Sabtu">
+                    <line x1="0" y1="90.5" x2="280" y2="90.5" class="axis"/>
+                    <rect class="bar" style="--i:0" x="10"  y="48" width="26" height="42" rx="5"/>
+                    <rect class="bar" style="--i:1" x="49"  y="35" width="26" height="55" rx="5"/>
+                    <rect class="bar" style="--i:2" x="88"  y="42" width="26" height="48" rx="5"/>
+                    <rect class="bar" style="--i:3" x="127" y="27" width="26" height="63" rx="5"/>
+                    <rect class="bar" style="--i:4" x="166" y="20" width="26" height="70" rx="5"/>
+                    <rect class="bar bar--hi" style="--i:5" x="205" y="4" width="26" height="86" rx="5"/>
+                    <rect class="bar" style="--i:6" x="244" y="16" width="26" height="74" rx="5"/>
+                  </svg>
+                  <figcaption class="mini-chart__days" aria-hidden="true">
+                    <span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span><span>Min</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Tahap 4: keputusan -->
+              <div class="stage" id="stage-decide" role="tabpanel" aria-labelledby="tab-decide" data-file="Rekomendasi stok">
+                <div class="insight">
+                  <span class="insight__icon" aria-hidden="true"><svg class="icon"><use href="#i-trend"/></svg></span>
+                  <div>
+                    <p class="insight__title">Stok Kopi Susu di cabang Utara diperkirakan habis dalam 6 hari.</p>
+                    <p class="insight__text">Rekomendasi: tambah pesanan bahan untuk sekitar 120 cup sebelum Jumat.</p>
+                  </div>
+                </div>
+                <figure class="forecast">
+                  <svg viewBox="0 0 280 104" role="img" aria-label="Grafik perkiraan stok yang turun di bawah batas minimum dalam enam hari">
+                    <line x1="0" y1="84" x2="280" y2="84" class="forecast__limit"/>
+                    <text x="4" y="80" class="forecast__label">batas minimum</text>
+                    <polygon class="forecast__band" points="160,50 200,55 240,64 276,74 276,98 240,88 200,70 160,50"/>
+                    <polyline class="forecast__actual" pathLength="1" points="4,18 44,26 84,31 124,42 160,50"/>
+                    <polyline class="forecast__pred" points="160,50 200,62 240,76 276,88"/>
+                    <line x1="160" y1="6" x2="160" y2="100" class="forecast__today"/>
+                    <text x="164" y="12" class="forecast__label">hari ini</text>
+                    <circle cx="160" cy="50" r="3.5" class="forecast__dot"/>
+                  </svg>
+                </figure>
+                <p class="stage__meta">
+                  <svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg>
+                  Diperbarui otomatis setiap pagi pukul 06.00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-chip float-chip--a" aria-hidden="true">
+            <span class="float-chip__icon"><svg class="icon"><use href="#i-check-circle"/></svg></span>
+            <span><b>Pipeline selesai</b><small>412 baris diproses</small></span>
+          </div>
+          <div class="float-chip float-chip--b" aria-hidden="true">
+            <span class="float-chip__icon"><svg class="icon"><use href="#i-dashboard"/></svg></span>
+            <span><b>Dashboard diperbarui</b><small>2 menit lalu</small></span>
+          </div>
+
+          <p class="hero__caption">Contoh alur: data penjualan harian sebuah usaha kuliner.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VALUE ============ -->
+    <section class="section values" id="values" aria-labelledby="values-title">
+      <div class="container values__inner">
+        <div class="values__intro reveal">
+          <h2 class="display-2" id="values-title">Dari data mentah ke sistem yang bisa diandalkan.</h2>
+          <p class="lead">
+            Sebagian besar masalah data bukan soal kurang teknologi, tetapi soal struktur.
+            Karena itu setiap project dimulai dari merapikan fondasinya.
+          </p>
+        </div>
+        <ol class="values__list">
+          <li class="value reveal" style="--d:0s">
+            <span class="value__num">01</span>
+            <h3>Structured</h3>
+            <p>Data disusun dengan struktur, format, dan aturan yang jelas sejak awal.</p>
+          </li>
+          <li class="value reveal" style="--d:.08s">
+            <span class="value__num">02</span>
+            <h3>Data-driven</h3>
+            <p>Dashboard dan rekomendasi berangkat dari data yang kamu miliki, bukan asumsi.</p>
+          </li>
+          <li class="value reveal" style="--d:.16s">
+            <span class="value__num">03</span>
+            <h3>Scalable</h3>
+            <p>Sistem dirancang agar tetap nyaman dipakai ketika data dan tim bertambah.</p>
+          </li>
+          <li class="value reveal" style="--d:.24s">
+            <span class="value__num">04</span>
+            <h3>Reliable</h3>
+            <p>Diuji dan didokumentasikan supaya bisa diandalkan untuk pekerjaan sehari-hari.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">Services</p>
+            <h2 class="display-2" id="services-title">Layanan dari pengumpulan data sampai keputusan.</h2>
+          </div>
+          <p class="lead">
+            Pilih satu layanan atau gabungkan beberapa. Setiap project disesuaikan dengan
+            skala, data, dan cara kerja tim kamu.
+          </p>
+        </header>
+
+        <ul class="services__grid">
+          <li class="service service--wide card-glow reveal">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span>
+              <span class="service__num">01</span>
+            </div>
+            <h3 class="service__title">Information System</h3>
+            <p class="service__desc">Development dan deployment sistem informasi berbasis web untuk pendataan, inventaris, absensi, hingga administrasi internal.</p>
+            <ul class="tags service__tags" aria-label="Contoh sistem">
+              <li class="tag">Portal pendataan</li>
+              <li class="tag">Inventaris</li>
+              <li class="tag">Admin panel</li>
+              <li class="tag">Deployment</li>
+            </ul>
+            <a class="service__link" href="#contact" data-service="Information System">Diskusikan<span class="sr-only"> layanan Information System</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+
+          <li class="service card-glow reveal" style="--d:.06s">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-dashboard"/></svg></span>
+              <span class="service__num">02</span>
+            </div>
+            <h3 class="service__title">Monitoring Dashboard</h3>
+            <p class="service__desc">Dashboard monitoring interaktif untuk memantau data dan KPI dari satu layar.</p>
+            <a class="service__link" href="#contact" data-service="Monitoring Dashboard">Diskusikan<span class="sr-only"> layanan Monitoring Dashboard</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+
+          <li class="service card-glow reveal">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg></span>
+              <span class="service__num">03</span>
+            </div>
+            <h3 class="service__title">Machine Learning</h3>
+            <p class="service__desc">Model machine learning untuk analisis, klasifikasi, dan prediksi berdasarkan data historis.</p>
+            <a class="service__link" href="#contact" data-service="Machine Learning">Diskusikan<span class="sr-only"> layanan Machine Learning</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+
+          <li class="service card-glow reveal" style="--d:.06s">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-workflow"/></svg></span>
+              <span class="service__num">04</span>
+            </div>
+            <h3 class="service__title">ETL &amp; Data Pipeline</h3>
+            <p class="service__desc">Extract, transform, dan load data dari berbagai sumber menjadi pipeline yang terstruktur dan terjadwal.</p>
+            <a class="service__link" href="#contact" data-service="ETL &amp; Data Pipeline">Diskusikan<span class="sr-only"> layanan ETL dan Data Pipeline</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+
+          <li class="service card-glow reveal" style="--d:.12s">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>
+              <span class="service__num">05</span>
+            </div>
+            <h3 class="service__title">Data Analytics</h3>
+            <p class="service__desc">Exploratory data analysis, data cleaning, visualization, dan insight yang bisa langsung ditindaklanjuti.</p>
+            <a class="service__link" href="#contact" data-service="Data Analytics">Diskusikan<span class="sr-only"> layanan Data Analytics</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+
+          <li class="service card-glow reveal">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
+              <span class="service__num">06</span>
+            </div>
+            <h3 class="service__title">Data Administration</h3>
+            <p class="service__desc">Data entry, cleaning, validation, dokumentasi, dan pengelolaan database.</p>
+            <a class="service__link" href="#contact" data-service="Data Administration">Diskusikan<span class="sr-only"> layanan Data Administration</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+
+          <li class="service card-glow reveal" style="--d:.06s">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg></span>
+              <span class="service__num">07</span>
+            </div>
+            <h3 class="service__title">Power BI</h3>
+            <p class="service__desc">Dashboard interaktif dan reporting di Power BI, dengan model data yang rapi di baliknya.</p>
+            <a class="service__link" href="#contact" data-service="Power BI">Diskusikan<span class="sr-only"> layanan Power BI</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+
+          <li class="service card-glow reveal" style="--d:.12s">
+            <div class="service__top">
+              <span class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg></span>
+              <span class="service__num">08</span>
+            </div>
+            <h3 class="service__title">Automation</h3>
+            <p class="service__desc">Automasi pekerjaan administratif dan pengolahan data yang selama ini dikerjakan berulang secara manual.</p>
+            <a class="service__link" href="#contact" data-service="Automation">Diskusikan<span class="sr-only"> layanan Automation</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+          </li>
+        </ul>
+
+        <p class="services__more reveal">
+          Juga tersedia: data entry dan data processing, database management, reporting,
+          serta maintenance dan improvement sistem yang sudah berjalan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <!-- PLACEHOLDER: ganti keempat project di bawah dengan project nyata beserta hasil yang benar-benar terjadi -->
+    <section class="section work" id="portfolio" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">Selected Work</p>
+            <h2 class="display-2" id="work-title">Project pilihan.</h2>
+          </div>
+          <p class="lead">Setiap project berangkat dari masalah nyata: rekap yang memakan waktu, data yang tersebar, atau keputusan yang dibuat tanpa angka.</p>
+        </header>
+
+        <div class="work__list">
+          <!-- Project 01 -->
+          <article class="case reveal" aria-labelledby="case-1-title">
+            <div class="case__visual">
+              <div class="mock" aria-hidden="true">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Monitoring Penjualan</span></div>
+                <div class="mock__body">
+                  <div class="mock-kpis">
+                    <div><span>Omzet</span><b>Rp 92,4 jt</b></div>
+                    <div><span>Order</span><b>3.410</b></div>
+                    <div><span>Stok kritis</span><b class="is-warn">7 item</b></div>
+                  </div>
+                  <div class="mock-split">
+                    <svg class="mock-area" viewBox="0 0 200 80" preserveAspectRatio="none">
+                      <path class="mock-area__fill" d="M0 60 L25 52 L50 56 L75 40 L100 44 L125 30 L150 34 L175 20 L200 24 L200 80 L0 80Z"/>
+                      <path class="mock-area__line" d="M0 60 L25 52 L50 56 L75 40 L100 44 L125 30 L150 34 L175 20 L200 24"/>
+                    </svg>
+                    <div class="mock-bars">
+                      <span style="--h:.45"></span><span style="--h:.7"></span><span style="--h:.55"></span><span style="--h:.9"></span><span style="--h:.62"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="case__meta"><span class="case__index">Project 01</span><span>Dashboard / Data Visualization</span></p>
+              <h3 class="case__title" id="case-1-title">Monitoring Dashboard</h3>
+              <p class="case__desc">Dashboard penjualan dan stok untuk usaha dengan beberapa cabang. Spreadsheet harian dari tiap cabang dikumpulkan ke satu sumber, lalu disajikan sebagai KPI yang dipantau setiap pagi.</p>
+              <dl class="case__facts">
+                <div>
+                  <dt>Teknologi</dt>
+                  <dd><ul class="tags"><li class="tag">Power BI</li><li class="tag">SQL</li><li class="tag">Python</li></ul></dd>
+                </div>
+                <div>
+                  <dt>Hasil</dt>
+                  <dd>Rekap harian tidak lagi disusun manual. Semua cabang terpantau dari satu layar.</dd>
+                </div>
+              </dl>
+              <button class="btn btn--ghost" type="button" data-case="case-dashboard">
+                View Case Study
+                <svg class="icon icon--nudge-ur" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="case reveal" aria-labelledby="case-2-title">
+            <div class="case__visual">
+              <div class="mock" aria-hidden="true">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Sistem Inventaris</span></div>
+                <div class="mock-app">
+                  <div class="mock-app__side">
+                    <span class="is-active">Dashboard</span><span>Barang</span><span>Peminjaman</span><span>Laporan</span>
+                  </div>
+                  <div class="mock-app__main">
+                    <div class="mock-app__toolbar"><span class="mock-app__search">Cari barang</span><span class="mock-app__add">+ Tambah</span></div>
+                    <div class="mock-app__row"><span>Proyektor Lab 2</span><em class="st st--ok">Tersedia</em></div>
+                    <div class="mock-app__row"><span>Laptop Admin 04</span><em class="st st--wait">Dipinjam</em></div>
+                    <div class="mock-app__row"><span>Kamera DSLR</span><em class="st st--ok">Tersedia</em></div>
+                    <div class="mock-app__row"><span>Printer TU</span><em class="st st--bad">Servis</em></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="case__meta"><span class="case__index">Project 02</span><span>Web Application</span></p>
+              <h3 class="case__title" id="case-2-title">Information System</h3>
+              <p class="case__desc">Sistem inventaris dan peminjaman barang berbasis web untuk sekolah, menggantikan buku catatan dan spreadsheet yang tersebar di beberapa staf.</p>
+              <dl class="case__facts">
+                <div>
+                  <dt>Teknologi</dt>
+                  <dd><ul class="tags"><li class="tag">JavaScript</li><li class="tag">MySQL</li><li class="tag">Cloudflare</li></ul></dd>
+                </div>
+                <div>
+                  <dt>Hasil</dt>
+                  <dd>Status setiap barang tercatat di satu tempat dan riwayat peminjaman bisa ditelusuri.</dd>
+                </div>
+              </dl>
+              <button class="btn btn--ghost" type="button" data-case="case-system">
+                View Case Study
+                <svg class="icon icon--nudge-ur" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="case reveal" aria-labelledby="case-3-title">
+            <div class="case__visual">
+              <div class="mock" aria-hidden="true">
+                <div class="mock__bar"><i></i><i></i><i></i><span>Forecast Permintaan</span></div>
+                <div class="mock__body">
+                  <div class="mock-legend"><span class="mock-legend__actual">Aktual</span><span class="mock-legend__pred">Prediksi</span></div>
+                  <svg class="mock-ml" viewBox="0 0 300 130">
+                    <path class="mock-ml__grid" d="M0 30.5H300M0 65.5H300M0 100.5H300"/>
+                    <path class="mock-ml__band" d="M190 62 L220 50 L250 58 L280 38 L300 42 L300 84 L280 80 L250 92 L220 84 L190 72Z"/>
+                    <path class="mock-ml__actual" d="M0 92 L20 84 L40 88 L60 72 L80 78 L100 64 L120 70 L140 56 L160 62 L190 67"/>
+                    <path class="mock-ml__pred" d="M190 67 L220 67 L250 75 L280 59 L300 63"/>
+                    <path class="mock-ml__now" d="M190.5 10V122"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="case__meta"><span class="case__index">Project 03</span><span>Machine Learning / Time Series</span></p>
+              <h3 class="case__title" id="case-3-title">Machine Learning Forecasting</h3>
+              <p class="case__desc">Model time series untuk memperkirakan permintaan mingguan, dipakai sebagai dasar perencanaan stok dan produksi.</p>
+              <dl class="case__facts">
+                <div>
+                  <dt>Teknologi</dt>
+                  <dd><ul class="tags"><li class="tag">Python</li><li class="tag">Pandas</li><li class="tag">Scikit-learn</li></ul></dd>
+                </div>
+                <div>
+                  <dt>Hasil</dt>
+                  <dd>Perencanaan stok berangkat dari angka prediksi, bukan perkiraan kasar.</dd>
+                </div>
+              </dl>
+              <button class="btn btn--ghost" type="button" data-case="case-forecast">
+                View Case Study
+                <svg class="icon icon--nudge-ur" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="case reveal" aria-labelledby="case-4-title">
+            <div class="case__visual">
+              <div class="mock-etl" aria-hidden="true">
+                <div class="mock-etl__col">
+                  <p>Extract</p>
+                  <span>Excel</span><span>Google Form</span><span>API</span>
+                </div>
+                <div class="mock-etl__link"><i></i></div>
+                <div class="mock-etl__col mock-etl__col--mid">
+                  <p>Transform</p>
+                  <span>Cleaning</span><span>Validasi</span><span>Merge</span>
+                </div>
+                <div class="mock-etl__link"><i></i></div>
+                <div class="mock-etl__col">
+                  <p>Load</p>
+                  <span>MySQL</span><span>Dashboard</span>
+                </div>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="case__meta"><span class="case__index">Project 04</span><span>Data Engineering</span></p>
+              <h3 class="case__title" id="case-4-title">Data Processing &amp; ETL</h3>
+              <p class="case__desc">Pipeline yang menarik data dari beberapa sumber, membersihkan dan memvalidasinya, lalu memuatnya ke database yang siap dipakai untuk laporan.</p>
+              <dl class="case__facts">
+                <div>
+                  <dt>Teknologi</dt>
+                  <dd><ul class="tags"><li class="tag">Python</li><li class="tag">SQL</li><li class="tag">Apps Script</li></ul></dd>
+                </div>
+                <div>
+                  <dt>Hasil</dt>
+                  <dd>Data dari berbagai format masuk ke satu struktur yang konsisten dan terjadwal.</dd>
+                </div>
+              </dl>
+              <button class="btn btn--ghost" type="button" data-case="case-etl">
+                View Case Study
+                <svg class="icon icon--nudge-ur" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOOLS & TECHNOLOGIES ============ -->
+    <section class="section stack" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">Tools &amp; Technologies</p>
+            <h2 class="display-2" id="stack-title">Alat yang dipakai, sesuai tahapannya.</h2>
+          </div>
+          <p class="lead">Teknologi dipilih berdasarkan kebutuhan project dan kemampuan tim yang akan memakainya, bukan sebaliknya.</p>
+        </header>
+
+        <div class="stack__flow reveal">
+          <div class="stack__stage">
+            <p class="stack__step"><span>1</span>Kumpulkan</p>
+            <p class="stack__hint">Sumber dan penyimpanan data</p>
+            <ul class="tools">
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Xl</span><span class="tool__name">Excel</span><span class="tool__tip" role="tooltip">Sumber data paling umum di banyak tim</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">GS</span><span class="tool__name">Google Apps Script</span><span class="tool__tip" role="tooltip">Automasi Google Sheets dan Forms</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">My</span><span class="tool__name">MySQL</span><span class="tool__tip" role="tooltip">Database relasional untuk sistem</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Sq</span><span class="tool__name">SQL</span><span class="tool__tip" role="tooltip">Query, agregasi, dan transformasi</span></li>
+            </ul>
+          </div>
+          <div class="stack__connector" aria-hidden="true"><i></i></div>
+          <div class="stack__stage">
+            <p class="stack__step"><span>2</span>Olah</p>
+            <p class="stack__hint">Cleaning, transformasi, dan model</p>
+            <ul class="tools">
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Py</span><span class="tool__name">Python</span><span class="tool__tip" role="tooltip">Scripting, pipeline, dan analisis</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Pd</span><span class="tool__name">Pandas</span><span class="tool__tip" role="tooltip">Cleaning dan transformasi data</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Sk</span><span class="tool__name">Scikit-learn</span><span class="tool__tip" role="tooltip">Model machine learning</span></li>
+            </ul>
+          </div>
+          <div class="stack__connector" aria-hidden="true"><i></i></div>
+          <div class="stack__stage">
+            <p class="stack__step"><span>3</span>Sajikan</p>
+            <p class="stack__hint">Dashboard dan antarmuka</p>
+            <ul class="tools">
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">BI</span><span class="tool__name">Power BI</span><span class="tool__tip" role="tooltip">Dashboard dan reporting interaktif</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Ht</span><span class="tool__name">HTML</span><span class="tool__tip" role="tooltip">Struktur antarmuka web</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Cs</span><span class="tool__name">CSS</span><span class="tool__tip" role="tooltip">Tampilan yang responsif</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Js</span><span class="tool__name">JavaScript</span><span class="tool__tip" role="tooltip">Interaksi dan logika di browser</span></li>
+            </ul>
+          </div>
+          <div class="stack__connector" aria-hidden="true"><i></i></div>
+          <div class="stack__stage">
+            <p class="stack__step"><span>4</span>Rilis</p>
+            <p class="stack__hint">Versioning dan deployment</p>
+            <ul class="tools">
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Gt</span><span class="tool__name">Git</span><span class="tool__tip" role="tooltip">Riwayat perubahan kode</span></li>
+              <li class="tool" tabindex="0"><span class="tool__mark" aria-hidden="true">Cf</span><span class="tool__name">Cloudflare</span><span class="tool__tip" role="tooltip">Hosting dan deployment</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-label">How I Work</p>
+            <h2 class="display-2" id="process-title">Lima tahap, dari obrolan pertama sampai sistem berjalan.</h2>
+          </div>
+          <p class="lead">Kamu tahu apa yang sedang dikerjakan dan apa yang akan diterima di setiap tahap.</p>
+        </header>
+
+        <ol class="timeline" data-observe>
+          <li class="timeline__step" style="--i:0">
+            <span class="timeline__num">01</span>
+            <div>
+              <h3>Discover</h3>
+              <p>Memahami kebutuhan, alur kerja saat ini, dan data yang sudah ada.</p>
+              <p class="timeline__out"><span>Hasil</span>Ringkasan kebutuhan</p>
+            </div>
+          </li>
+          <li class="timeline__step" style="--i:1">
+            <span class="timeline__num">02</span>
+            <div>
+              <h3>Plan</h3>
+              <p>Merancang struktur sistem dan data, lalu menyepakati ruang lingkup dan estimasi.</p>
+              <p class="timeline__out"><span>Hasil</span>Rancangan dan estimasi</p>
+            </div>
+          </li>
+          <li class="timeline__step" style="--i:2">
+            <span class="timeline__num">03</span>
+            <div>
+              <h3>Build</h3>
+              <p>Mengembangkan sistem, dashboard, pipeline, atau model secara bertahap dengan review berkala.</p>
+              <p class="timeline__out"><span>Hasil</span>Versi yang bisa dicoba</p>
+            </div>
+          </li>
+          <li class="timeline__step" style="--i:3">
+            <span class="timeline__num">04</span>
+            <div>
+              <h3>Deploy</h3>
+              <p>Melakukan deployment, konfigurasi, dan serah terima beserta panduan penggunaan.</p>
+              <p class="timeline__out"><span>Hasil</span>Sistem siap dipakai</p>
+            </div>
+          </li>
+          <li class="timeline__step" style="--i:4">
+            <span class="timeline__num">05</span>
+            <div>
+              <h3>Improve</h3>
+              <p>Maintenance, monitoring, dan improvement berdasarkan pemakaian sehari-hari.</p>
+              <p class="timeline__out"><span>Hasil</span>Pembaruan berkala</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <!-- KARTU NAMA: klik/ketuk kartu atau tombol di bawahnya untuk membalik -->
+        <figure class="bizcard reveal">
+          <div class="bizcard__stage" data-bizcard>
+            <div class="bizcard__tilt">
+              <div class="bizcard__inner">
+                <!-- Sisi depan -->
+                <div class="bizcard__face bizcard__face--front">
+                  <div class="bizcard__row">
+                    <span class="bizcard__brand">
+                    <svg class="bizcard__mark" viewBox="0 0 32 32" aria-hidden="true">
+                      <rect x="8" y="9" width="8" height="3" rx="1.5" class="bizcard__mark-line"/>
+                      <rect x="8" y="14.5" width="16" height="3" rx="1.5" class="bizcard__mark-accent"/>
+                      <rect x="8" y="20" width="12" height="3" rx="1.5" class="bizcard__mark-line"/>
+                    </svg>
+                      Liliaaan Studio
+                    </span>
+                    <span class="bizcard__seal" aria-hidden="true">L</span>
+                  </div>
+                  <div class="bizcard__id">
+                    <p class="bizcard__name">Liliaaan</p>
+                    <p class="bizcard__role">Data &amp; Systems Developer</p>
+                  </div>
+                  <div class="bizcard__row bizcard__foot">
+                    <span>Data. Systems. Digital Solutions.</span>
+                    <span>liliaaan.pages.dev</span>
+                  </div>
+                </div>
+
+                <!-- Sisi belakang -->
+                <div class="bizcard__face bizcard__face--back" inert>
+                  <div class="bizcard__row">
+                    <span class="bizcard__brand">
+                    <svg class="bizcard__mark" viewBox="0 0 32 32" aria-hidden="true">
+                      <rect x="8" y="9" width="8" height="3" rx="1.5" class="bizcard__mark-line"/>
+                      <rect x="8" y="14.5" width="16" height="3" rx="1.5" class="bizcard__mark-accent"/>
+                      <rect x="8" y="20" width="12" height="3" rx="1.5" class="bizcard__mark-line"/>
+                    </svg>
+                      Liliaaan Studio
+                    </span>
+                    <span class="bizcard__label">Kontak</span>
+                  </div>
+                  <ul class="bizcard__contacts">
+                    <li><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><a href="https://wa.me/6282339633564" target="_blank" rel="noopener">+62 823-3963-3564</a></li>
+                    <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:nuraulia.putri150405@gmail.com">nuraulia.putri150405@gmail.com</a></li>
+                    <li><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg><a href="https://www.linkedin.com/in/nur-aulia-putri-5a90aa2b0/" target="_blank" rel="noopener">in/nur-aulia-putri</a></li>
+                    <li><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg><a href="https://github.com/l1liaaan" target="_blank" rel="noopener">github.com/l1liaaan</a></li>
+                  </ul>
+                  <div class="bizcard__row bizcard__foot">
+                    <span>Sistem informasi &middot; Dashboard &middot; ETL &middot; ML</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="bizcard__caption">
+            <button class="bizcard__flip" type="button" aria-pressed="false">
+              <svg class="icon" aria-hidden="true"><use href="#i-refresh"/></svg>
+              <span data-flip-label>Lihat kontak</span>
+            </button>
+            <span class="bizcard__hint">atau klik kartunya</span>
+          </figcaption>
+        </figure>
+
+        <div class="about__copy reveal" style="--d:.1s">
+          <p class="section-label">About</p>
+          <h2 class="display-3" id="about-title">Saya membantu bisnis dan organisasi mengubah proses manual menjadi sistem digital yang tertata.</h2>
+          <p>
+            Banyak tim masih bekerja dengan spreadsheet yang tersebar, rekap manual, dan laporan yang disusun ulang setiap minggu.
+            Pekerjaan saya adalah merapikan fondasi datanya, membangun sistem yang sesuai, lalu memastikan hasilnya benar-benar dipakai.
+          </p>
+          <p>
+            Saya bekerja langsung dengan klien dari awal sampai akhir, jadi kamu selalu tahu siapa yang mengerjakan project kamu.
+          </p>
+          <dl class="about__facts">
+            <div><dt>Role</dt><dd>Data &amp; Systems Developer</dd></div>
+            <div><dt>Keahlian</dt><dd>Sistem informasi, dashboard, ETL, machine learning</dd></div>
+            <div><dt>Teknologi</dt><dd>Python, SQL, Power BI, JavaScript</dd></div>
+            <div><dt>Pendekatan</dt><dd>Bertahap, terdokumentasi, sesuai kebutuhan bisnis</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY WORK WITH ME ============ -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="container why__inner">
+        <div class="why__intro reveal">
+          <p class="section-label">Why Work With Me</p>
+          <h2 class="display-3" id="why-title">Yang bisa kamu harapkan saat bekerja sama.</h2>
+        </div>
+        <ul class="why__list">
+          <li class="why__item reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div><h3>Practical solutions</h3><p>Solusi dipilih karena cocok dengan kebutuhan dan kemampuan tim kamu, bukan karena sedang tren.</p></div>
+          </li>
+          <li class="why__item reveal" style="--d:.06s">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div><h3>Clear communication</h3><p>Progres, kendala, dan keputusan teknis dijelaskan dengan bahasa yang mudah dipahami.</p></div>
+          </li>
+          <li class="why__item reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div><h3>Data-driven approach</h3><p>Desain dashboard dan rekomendasi berangkat dari data yang kamu miliki.</p></div>
+          </li>
+          <li class="why__item reveal" style="--d:.06s">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div><h3>Scalable architecture</h3><p>Struktur disiapkan agar sistem bisa dikembangkan tanpa harus mulai dari nol.</p></div>
+          </li>
+          <li class="why__item reveal">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div><h3>Clean documentation</h3><p>Setiap project disertai dokumentasi supaya bisa dipakai dan dirawat oleh tim kamu sendiri.</p></div>
+          </li>
+          <li class="why__item reveal" style="--d:.06s">
+            <svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>
+            <div><h3>Focus on business needs</h3><p>Ukurannya sederhana: apakah sistem ini membuat pekerjaan kamu lebih mudah.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__panel reveal">
+          <div class="cta__grid" aria-hidden="true"></div>
+          <div class="cta__glow" aria-hidden="true"></div>
+          <h2 class="cta__title" id="cta-title">Punya project yang ingin dimulai?</h2>
+          <p class="cta__text">Mari ubah data atau proses kerja kamu menjadi sesuatu yang benar-benar terpakai.</p>
+          <div class="cta__actions">
+            <a class="btn btn--light btn--lg" href="#contact">
+              Start a Conversation
+              <svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
+            <a class="btn btn--outline-light btn--lg" href="#services">View Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <div class="contact__intro reveal">
+          <p class="section-label">Contact</p>
+          <h2 class="display-3" id="contact-title">Ceritakan kebutuhan kamu.</h2>
+          <p class="lead">Tulis gambaran singkat project kamu. Saya akan membalas dengan pertanyaan lanjutan atau usulan langkah awal, biasanya dalam satu hari kerja.</p>
+
+          <!-- GANTI: nomor WhatsApp, email, LinkedIn, dan GitHub -->
+          <ul class="channels">
+            <li>
+              <a class="channel" href="https://wa.me/6282339633564" target="_blank" rel="noopener">
+                <span class="channel__icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+                <span class="channel__text"><small>WhatsApp</small>+62 823-3963-3564</span>
+                <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="mailto:nuraulia.putri150405@gmail.com">
+                <span class="channel__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <span class="channel__text"><small>Email</small>nuraulia.putri150405@gmail.com</span>
+                <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://www.linkedin.com/in/nur-aulia-putri-5a90aa2b0/" target="_blank" rel="noopener">
+                <span class="channel__icon"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+                <span class="channel__text"><small>LinkedIn</small>Nur Aulia Putri</span>
+                <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="channel" href="https://github.com/l1liaaan" target="_blank" rel="noopener">
+                <span class="channel__icon"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></span>
+                <span class="channel__text"><small>GitHub</small>@l1liaaan</span>
+                <svg class="icon channel__arrow" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form tanpa backend: menyusun pesan lalu membuka aplikasi email / WhatsApp pengunjung.
+             Ubah data-email dan data-whatsapp (format 62xxxxxxxxxx, tanpa + dan spasi). -->
+        <form class="form reveal" id="contact-form" style="--d:.1s" novalidate
+              data-email="nuraulia.putri150405@gmail.com" data-whatsapp="6282339633564">
+          <div class="form__row">
+            <div class="field">
+              <label for="f-name">Nama</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-email-err">
+              <p class="field__error" id="f-email-err"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="project-type">Jenis project</label>
+            <div class="select">
+              <select id="project-type" name="type" required aria-describedby="f-type-err">
+                <option value="" selected disabled>Pilih jenis project</option>
+                <option value="Information System">Information System</option>
+                <option value="Monitoring Dashboard">Monitoring Dashboard</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="ETL &amp; Data Pipeline">ETL &amp; Data Pipeline</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Data Administration">Data Administration</option>
+                <option value="Power BI">Power BI</option>
+                <option value="Automation">Automation</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+            <p class="field__error" id="f-type-err"></p>
+          </div>
+          <div class="field">
+            <label for="f-message">Pesan</label>
+            <textarea id="f-message" name="message" rows="5" required aria-describedby="f-message-err f-message-hint"
+                      placeholder="Contoh: kami punya data penjualan di beberapa file Excel dan ingin dashboard mingguan."></textarea>
+            <p class="field__hint" id="f-message-hint">Ceritakan kondisi saat ini dan hasil yang kamu harapkan.</p>
+            <p class="field__error" id="f-message-err"></p>
+          </div>
+
+          <div class="form__actions">
+            <button class="btn btn--primary btn--lg" type="submit">
+              Send Inquiry
+              <svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </button>
+            <button class="btn btn--ghost btn--lg" type="button" id="send-wa">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+              Kirim lewat WhatsApp
+            </button>
+          </div>
+          <p class="form__note">Formulir ini menyusun pesan lalu membuka aplikasi email atau WhatsApp kamu. Tidak ada data yang disimpan di website ini.</p>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="#home" aria-label="Liliaaan Studio, kembali ke atas">
+            <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="9" class="brand__mark-bg"/>
+              <rect x="8" y="9" width="8" height="3" rx="1.5" class="brand__mark-line"/>
+              <rect x="8" y="14.5" width="16" height="3" rx="1.5" class="brand__mark-accent"/>
+              <rect x="8" y="20" width="12" height="3" rx="1.5" class="brand__mark-line"/>
+            </svg>
+            <span class="brand__name">Liliaaan Studio</span>
+          </a>
+          <p class="footer__tagline">Data. Systems. Digital Solutions.</p>
+          <p class="footer__desc">Sistem informasi, dashboard, pipeline data, dan machine learning untuk tim yang ingin bekerja dengan data yang rapi.</p>
+        </div>
+
+        <nav class="footer__col" aria-labelledby="f-nav">
+          <h2 id="f-nav">Navigasi</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-labelledby="f-services">
+          <h2 id="f-services">Services</h2>
+          <ul>
+            <li><a href="#services">Information System</a></li>
+            <li><a href="#services">Monitoring Dashboard</a></li>
+            <li><a href="#services">Machine Learning</a></li>
+            <li><a href="#services">ETL &amp; Data Pipeline</a></li>
+            <li><a href="#services">Power BI</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-labelledby="f-social">
+          <h2 id="f-social">Kontak</h2>
+          <ul>
+            <li><a href="mailto:nuraulia.putri150405@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/6282339633564" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/in/nur-aulia-putri-5a90aa2b0/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/l1liaaan" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> Liliaaan Studio. All rights reserved.</p>
+        <a class="footer__top-link" href="#home">Kembali ke atas</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ CASE STUDY DIALOG ============ -->
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-dialog-title">
+    <div class="case-dialog__inner">
+      <button class="icon-btn case-dialog__close" type="button" aria-label="Tutup case study">
+        <svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
+      <div class="case-dialog__content" id="case-dialog-content"></div>
+    </div>
+  </dialog>
+
+  <!-- PLACEHOLDER: isi detail case study. Satu <template> per project, id-nya dipanggil lewat data-case. -->
+  <template id="case-dashboard">
+    <p class="case-dialog__cat">Dashboard / Data Visualization</p>
+    <h2 class="case-dialog__title" id="case-dialog-title">Monitoring Dashboard</h2>
+    <p class="case-dialog__lead">Dashboard penjualan dan stok untuk usaha dengan beberapa cabang.</p>
+    <div class="case-dialog__grid">
+      <section><h3>Konteks</h3><p>Setiap cabang mengirim rekap harian dalam file Excel dengan format berbeda. Pemilik usaha menunggu rekap gabungan setiap akhir minggu.</p></section>
+      <section><h3>Tantangan</h3><p>Format kolom tidak seragam, ada data ganda, dan rekap manual memakan waktu sehingga keputusan stok sering terlambat.</p></section>
+      <section><h3>Pendekatan</h3><p>Menyusun template input, membuat skrip Python untuk membersihkan dan menggabungkan data ke database, lalu membangun dashboard Power BI dengan KPI harian.</p></section>
+      <section><h3>Hasil</h3><p>Rekap tersedia setiap pagi tanpa penyusunan manual, dan kondisi semua cabang terlihat dari satu layar.</p></section>
+    </div>
+    <ul class="tags"><li class="tag">Power BI</li><li class="tag">SQL</li><li class="tag">Python</li></ul>
+    <a class="btn btn--primary case-dialog__cta" href="#contact" data-service="Monitoring Dashboard">Diskusikan project serupa<svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+  </template>
+
+  <template id="case-system">
+    <p class="case-dialog__cat">Web Application</p>
+    <h2 class="case-dialog__title" id="case-dialog-title">Information System</h2>
+    <p class="case-dialog__lead">Sistem inventaris dan peminjaman barang berbasis web untuk sekolah.</p>
+    <div class="case-dialog__grid">
+      <section><h3>Konteks</h3><p>Data barang dicatat di buku dan beberapa spreadsheet milik staf yang berbeda.</p></section>
+      <section><h3>Tantangan</h3><p>Sulit mengetahui barang mana yang sedang dipinjam, oleh siapa, dan kapan harus dikembalikan.</p></section>
+      <section><h3>Pendekatan</h3><p>Merancang database barang dan peminjaman, membangun antarmuka web sederhana dengan hak akses per peran, lalu melakukan deployment dan pelatihan singkat.</p></section>
+      <section><h3>Hasil</h3><p>Status setiap barang tercatat di satu tempat dan riwayat peminjaman bisa ditelusuri kapan saja.</p></section>
+    </div>
+    <ul class="tags"><li class="tag">JavaScript</li><li class="tag">MySQL</li><li class="tag">Cloudflare</li></ul>
+    <a class="btn btn--primary case-dialog__cta" href="#contact" data-service="Information System">Diskusikan project serupa<svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+  </template>
+
+  <template id="case-forecast">
+    <p class="case-dialog__cat">Machine Learning / Time Series</p>
+    <h2 class="case-dialog__title" id="case-dialog-title">Machine Learning Forecasting</h2>
+    <p class="case-dialog__lead">Model untuk memperkirakan permintaan mingguan sebagai dasar perencanaan stok.</p>
+    <div class="case-dialog__grid">
+      <section><h3>Konteks</h3><p>Perencanaan stok dilakukan berdasarkan perkiraan kasar dan pengalaman minggu sebelumnya.</p></section>
+      <section><h3>Tantangan</h3><p>Permintaan dipengaruhi musim dan hari tertentu, sehingga stok sering berlebih atau kurang.</p></section>
+      <section><h3>Pendekatan</h3><p>Menyiapkan data historis, membangun fitur waktu, membandingkan beberapa model, dan mengevaluasinya pada periode yang belum pernah dilihat model.</p></section>
+      <section><h3>Hasil</h3><p>Tim mendapatkan angka prediksi mingguan beserta rentang ketidakpastiannya sebagai dasar perencanaan.</p></section>
+    </div>
+    <ul class="tags"><li class="tag">Python</li><li class="tag">Pandas</li><li class="tag">Scikit-learn</li></ul>
+    <a class="btn btn--primary case-dialog__cta" href="#contact" data-service="Machine Learning">Diskusikan project serupa<svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+  </template>
+
+  <template id="case-etl">
+    <p class="case-dialog__cat">Data Engineering</p>
+    <h2 class="case-dialog__title" id="case-dialog-title">Data Processing &amp; ETL</h2>
+    <p class="case-dialog__lead">Pipeline yang menyatukan data dari beberapa sumber ke satu database.</p>
+    <div class="case-dialog__grid">
+      <section><h3>Konteks</h3><p>Data berasal dari Excel, Google Form, dan ekspor aplikasi lain dengan struktur yang berbeda-beda.</p></section>
+      <section><h3>Tantangan</h3><p>Penggabungan manual rawan salah ketik, duplikat, dan kolom yang tertukar.</p></section>
+      <section><h3>Pendekatan</h3><p>Membangun pipeline extract, transform, dan load dengan aturan validasi yang jelas, dijalankan terjadwal, dan tercatat log-nya.</p></section>
+      <section><h3>Hasil</h3><p>Data masuk ke satu struktur yang konsisten dan siap dipakai untuk laporan maupun dashboard.</p></section>
+    </div>
+    <ul class="tags"><li class="tag">Python</li><li class="tag">SQL</li><li class="tag">Google Apps Script</li></ul>
+    <a class="btn btn--primary case-dialog__cta" href="#contact" data-service="ETL &amp; Data Pipeline">Diskusikan project serupa<svg class="icon icon--nudge" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+  </template>
+</body>
+</html>
